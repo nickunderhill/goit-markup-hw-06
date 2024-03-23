@@ -41,6 +41,22 @@
                     <li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <button class="mobile-menu-toggle js-open-menu" type="button" aria-label="Open menu button"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-toggle-icon" width="32" height="22" viewBox="0 0 32 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_297068_2681)">
+                        <path d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866"
+                            stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_297068_2681">
+                            <rect width="32" height="22" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
         </div>
     </header>
     <!-- #endregion -->
@@ -66,7 +82,8 @@
                             </svg>
                         </div>
                         <h3 class="header-small">Strategy</h3>
-                        <p>Our goal is to identify the business problem to walk away with the perfect and creative
+                        <p class="features-text">Our goal is to identify the business problem to walk away with the
+                            perfect and creative
                             solution.
                         </p>
                     </li>
@@ -77,7 +94,8 @@
                             </svg>
                         </div>
                         <h3 class="header-small">Punctuality</h3>
-                        <p>Bring the key message to the brand's audience for the best price within the shortest possible
+                        <p class="features-text">Bring the key message to the brand's audience for the best price within
+                            the shortest possible
                             time.
                         </p>
                     </li>
@@ -88,7 +106,8 @@
                             </svg>
                         </div>
                         <h3 class="header-small">Diligence</h3>
-                        <p>Research and confirm brands that present the strongest digital growth opportunities and
+                        <p class="features-text">Research and confirm brands that present the strongest digital growth
+                            opportunities and
                             minimize
                             risk.
                         </p>
@@ -100,7 +119,8 @@
                             </svg>
                         </div>
                         <h3 class="header-small">Technologies</h3>
-                        <p>Design practice focused on digital experiences. We bring forth a deep passion for
+                        <p class="features-text">Design practice focused on digital experiences. We bring forth a deep
+                            passion for
                             problem-solving.
                         </p>
                     </li>
@@ -460,8 +480,72 @@
     </div>
     <!-- #endregion -->
 
+    <!-- #region Mobile menu -->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+        <button class="modal-close-button js-close-menu">
+            <svg class="icon-close">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+                <a class="link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="" class="link">Contacts</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li>
+                <a class="mobile-contacts-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+                <a class="mobile-contacts-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="socials">
+            <li class="socials-item">
+                <a class="socials-link" href="#">
+                    <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-link" href="#">
+                    <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-link" href="#">
+                    <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-link" href="#">
+                    <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- #endregion -->
+
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
