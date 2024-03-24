@@ -101,8 +101,14 @@ a {
 
 .header-small {
   color: var(--navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   margin-bottom: 8px;
   text-align: center;
+}
+
+.features-cards .header-small {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11111;
@@ -137,22 +143,22 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .features-cards .header-small {
+
+  .features-cards .header-small {
       text-align: left;
     }
-
-    .team-cards .header-small {
-      color: var(--navy-blue);
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 1.2;
-      margin-bottom: 8px;
-      text-align: center;
-    }
-
 }
 
 @media screen and (min-width: 1158px) {
+
+
+  .features-cards .header-small {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
   .header-big {
     color: var(--navy-blue);
     font-size: 36px;
